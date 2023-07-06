@@ -1,0 +1,62 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: arial;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.gameBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+#playerMoveContainer{
+  display: flex;
+  align-items: center;
+}
+#computerMoveContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+#computerMoveContainer > p {
+  font-weight: 400;
+  font-size: 15px;
+}
+#computerMove{
+  height: 70px;
+  width: 70px;
+}
+.move{height: 40%;}
+.moveBtn{
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 70px;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+}
+.moveMargin{margin: 0 10px;}
+.moveBtn:hover {background-color: rgb(24, 24, 24);}
+#result {font-size: 25px;}
+#resetBtn {
+  margin-top: 20px;
+  padding: 8px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 380px) {
+  .moveBtn{
+    height: 100px;
+    width: 100px;
+  }
+}
